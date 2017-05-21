@@ -1,7 +1,7 @@
 /* Universidade Estadual do Ceara
 Introducao a Computacao 2016.2 - Prof. Gildacio
 Jessica Cristina Cacau Patricio (1388627)
-Exercicio 802 */
+Exercicio 802 e 805 */
 
 #include<stdio.h>
 #include<stdlib.h>

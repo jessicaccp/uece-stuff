@@ -36,7 +36,7 @@ void main () {
     scanf("%lf", &num);
 
     for (i=1; i<=num; i++) {
-        if (i%2==0) /* Se for par, vai subtrair a divisão do valor total */
+        if (i%2==0) /* Se for par, vai subtrair a divisÃ£o do valor total */
             total -= som(i)/fat(i);
         else /* Se for impar, vai somar */
             total += som(i)/fat(i);

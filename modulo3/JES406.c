@@ -3,9 +3,9 @@ Introducao a Computacao 2016.2 - Prof. Gildacio
 Jessica Cristina Cacau Patricio (1388627)
 
 Exercicio 406
-1. Usando a estrutura while, Faça um programa para gerar a tabuada de multiplicar de TODOS os números, iniciando em 1, até o número inteiro entrado pelo teclado;
-2. Ou seja, se voce entrar com 7, deverá aparecer na sequencia (1 * 1 = 1, 1 * 2 = 2,... e assim por diante até 10. Depois começa tudo de novo com 2 - (2 * 1 = 2, 2 * 2 = 4,... e assim por diante até 10. Depois vai para 3 - (3 * 1 = 3, 3 * 2 = 6,... e assim por diante até 10.
-3. Parar quando atingir o número entrado pelo teclado.
+1. Usando a estrutura while, FaÃ§a um programa para gerar a tabuada de multiplicar de TODOS os nÃºmeros, iniciando em 1, atÃ© o nÃºmero inteiro entrado pelo teclado;
+2. Ou seja, se voce entrar com 7, deverÃ¡ aparecer na sequencia (1 * 1 = 1, 1 * 2 = 2,... e assim por diante atÃ© 10. Depois comeÃ§a tudo de novo com 2 - (2 * 1 = 2, 2 * 2 = 4,... e assim por diante atÃ© 10. Depois vai para 3 - (3 * 1 = 3, 3 * 2 = 6,... e assim por diante atÃ© 10.
+3. Parar quando atingir o nÃºmero entrado pelo teclado.
 4. Compile e execute. */
 
 #include<stdlib.h>

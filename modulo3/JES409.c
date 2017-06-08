@@ -3,9 +3,9 @@ Introducao a Computacao 2016.2 - Prof. Gildacio
 Jessica Cristina Cacau Patricio (1388627)
 
 Exercicio 409
-1. Usando a estrutura while, Faça um programa para fazer o seguinte:
+1. Usando a estrutura while, FaÃ§a um programa para fazer o seguinte:
 2. Leia seu nome numa variavel char NOME[50] (ou , se desejar, pode declarar diretamente;
-3. Apresente seu nome da ÚLTIMA LETRA PARA A PRIMEIRA, numa mesma linha, através de instruções específicas do while.
+3. Apresente seu nome da ÃšLTIMA LETRA PARA A PRIMEIRA, numa mesma linha, atravÃ©s de instruÃ§Ãµes especÃ­ficas do while.
 4. Compile e execute. */
 
 #include<stdlib.h>

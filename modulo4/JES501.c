@@ -3,12 +3,12 @@ Introducao a Computacao 2016.2 - Prof. Gildacio
 Jessica Cristina Cacau Patricio (1388627)
 
 Exercicio 501
-- Defina um vetor com 100 posiÁıes, tipo CHAR de nome V com o seguinte conte˙do:
-char NOME[]=îcoloque seu nome completo aquiî.
+- Defina um vetor com 100 posi√ß√µes, tipo CHAR de nome V com o seguinte conte√∫do:
+char NOME[]=‚Äùcoloque seu nome completo aqui‚Äù.
 - RETIRE TODAS AS VOGAIS de dentro desse vetor
-- N„o È para mascarar o resultado, ou seja, ao final do processo, o vetor NOME deve conter apenas
-CONSOANTES e espaÁos.
-- Exemplo: NOME[]=îgildacio joseî, a saÌda dever· ser ìgldc jsî */
+- N√£o √© para mascarar o resultado, ou seja, ao final do processo, o vetor NOME deve conter apenas
+CONSOANTES e espa√ßos.
+- Exemplo: NOME[]=‚Äùgildacio jose‚Äù, a sa√≠da dever√° ser ‚Äúgldc js‚Äù */
 
 #include<stdio.h>
 #include<stdlib.h>

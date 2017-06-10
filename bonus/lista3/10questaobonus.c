@@ -60,6 +60,6 @@ void main () {
         printf("\n");
     }
     else
-        printf("Vetor resultante 2: nao ha numeros impares em v1.\n");
+        printf("\nVetor resultante 2: nao ha numeros impares em v1.\n");
 
 }

@@ -1,11 +1,54 @@
 /* ----------------- variaveis globais ----------------- */
 typedef struct matriz {
     int **m, lin, col; // ponteiro para a matriz e numero de linhas e colunas da matriz
-    struct matriz *ant, *prox; // ponteiros auxiliares da lista encadeada
+    struct matriz *prox; // ponteiro auxiliar da lista encadeada
 } matriz;
 
 matriz *inicio_m; // ponteiro para o inicio da lista de matrizes
 
+/* ----------------- funcoes / matriz ----------------- */
+/* printa todas as matrizes adicionadas ate o momento */
+void exibir_matrizes () {
+    matriz *aux;
+    aux = inicio_m;
+
+    if (aux == NULL)
+        printf("Nenhuma matriz adicionada na lista.\n\n");
+    else {
+        int num = 1, i, j;
+        while (aux != NULL) {
+            printf("Matriz %d - %dx%d:\n", num++, aux->lin, aux->col);
+            for (i=0; i<aux->lin; i++) {
+                for (j=0; j<aux->col; j++)
+                    printf("%d ", aux->m[i][j]);
+                printf("\n");
+            }
+            aux = aux->prox;
+            printf("\n");
+        }
+    }
+}
+
+/* adiciona a matriz lida na lista */
+void adiciona_matriz (matriz* mat) {
+
+    if (inicio_m == NULL) {
+        inicio_m = mat;
+        mat->prox = NULL;
+    }
+    else {
+        matriz *aux;
+        aux = inicio_m;
+
+        while (aux->prox != NULL)
+            aux = aux->prox;
+
+        aux->prox = mat;
+        mat->prox = NULL;
+    }
+}
+
+/* recebe numero de linhas e colunas e elementos da matriz */
 void receber_matriz () {
     matriz *aux;
     aux = (matriz*)malloc(sizeof(matriz));
@@ -23,15 +66,11 @@ void receber_matriz () {
     printf("\nDigite os valores das posicoes da matriz:\n");
     for (i=0; i<aux->lin; i++) {
         for (j=0; j<aux->col; j++) {
-            printf("v[%d][%d] = ", i, j);
+            printf("m[%d][%d] = ", i, j);
             scanf(" %d", &aux->m[i][j]);
         }
     }
     printf("\n");
 
-    for (i=0; i<aux->lin; i++) {
-        for (j=0; j<aux->col; j++) {
-            printf("v[%d][%d] = %d\n", i, j, aux->m[i][j]);
-        }
-    }
+    adiciona_matriz(aux);
 }

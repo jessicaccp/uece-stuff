@@ -16,5 +16,8 @@ int main () {
     */
 
     receber_matriz();
+    receber_matriz();
+    receber_matriz();
+    exibir_matrizes();
 
 }

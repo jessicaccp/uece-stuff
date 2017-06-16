@@ -7,6 +7,32 @@ typedef struct vetor {
 vetor *inicio_v; // ponteiro para o inicio da lista de vetores
 
 /* ------------------ funcoes / vetor ------------------ */
+/* soma todos os vetores contidos na lista */
+void somageral_vetor() {
+    vetor *aux;
+    aux = inicio_v;
+    int maior = aux->elem, soma, i;
+
+    while (aux != NULL) {
+        if (aux->elem > maior)
+            maior = aux->elem;
+        aux = aux->prox;
+    }
+
+    printf("Vetor da soma geral: ");
+    for (i=0; i<maior; i++) {
+        soma = 0;
+        aux = inicio_v;
+        while (aux != NULL) {
+            if (i<aux->elem)
+                soma += aux->v[i];
+            aux = aux->prox;
+        }
+        printf("%d ", soma);
+    }
+    printf("\n");
+}
+
 /* calcula o produto escalar entre os vetores v1 e v2 */
 void produto_escalar (vetor *v1, vetor *v2) {
     int soma = 0;

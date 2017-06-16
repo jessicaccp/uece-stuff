@@ -1,7 +1,7 @@
 /* ----------------- variaveis globais ----------------- */
 typedef struct vetor {
     int *v, elem; // ponteiro para o vetor e numero de elementos do vetor
-    struct vetor *ant, *prox; // ponteiros auxiliares da lista encadeada
+    struct vetor *prox; // ponteiro auxiliar da lista encadeada
 } vetor;
 
 vetor *inicio_v; // ponteiro para o inicio da lista de vetores
@@ -76,7 +76,7 @@ void adiciona_vetor (vetor* vet) {
 
     if (inicio_v == NULL) {
         inicio_v = vet;
-        vet->prox = vet->ant = NULL;
+        vet->prox = NULL;
     }
     else {
         vetor *aux;
@@ -86,7 +86,6 @@ void adiciona_vetor (vetor* vet) {
             aux = aux->prox;
 
         aux->prox = vet;
-        vet->ant = aux;
         vet->prox = NULL;
     }
 }

@@ -1,2 +1,2 @@
-# ICC
-Exercícios da disciplina de [Introdução à Computação UECE 2016.2](http://ceara.pro.br/uece/icc/)
+# icc
+Soluções dos exercícios propostos na disciplina de [Introdução à Computação](http://ceara.pro.br/uece/icc/) 2016.2 do curso de Ciência da Computação, UECE.

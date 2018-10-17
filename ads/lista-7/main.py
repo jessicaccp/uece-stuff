@@ -13,6 +13,7 @@
 
 import random, math
 
+# Calcula o tempo de serviço usando o método de aceitação/rejeição
 def func_tds():
     p = 1
     lamb = math.exp(-6)
@@ -33,7 +34,7 @@ def main():
     tlcb = 0
     tds = 0
     for nc in range(1, 21):
-        tduc = (math.log(1 - random.random())) * -12
+        tduc = (math.log(1 - random.random())) * -12    # Método da transformação inversa
         tcr += tduc
         tis = max(tis + tds, tcr)
         tds = func_tds()

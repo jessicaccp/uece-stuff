@@ -10,7 +10,7 @@ from socket import *
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 
 # Assign IP address and port number to socket
-serverSocket.bind(('', 12000))
+serverSocket.bind(("127.0.0.1", 8000))
 
 while True:
 

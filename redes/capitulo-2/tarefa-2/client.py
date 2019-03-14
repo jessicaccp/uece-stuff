@@ -1,6 +1,7 @@
 #UDPPingerClient.py
 
 import socket
+from random import randint
 from socket import *
 from time import time
 
@@ -13,12 +14,16 @@ with socket(AF_INET, SOCK_DGRAM) as s:
 
 	# 10 mensagens
 	for i in range(1, 11):
-		try:
+		rand = randint(1, 10)
 		
+		try:
 			# Envia pacote
 			clientMessage = str(i).encode()
 			st = time() # tempo ao enviar
-			s.send(clientMessage)
+			
+			# Simula a perda do pacote
+			if rand > 4:
+				s.send(clientMessage)
 			
 			# Recebe resposta do servidor
 			serverMessage = s.recv(1024).decode()
